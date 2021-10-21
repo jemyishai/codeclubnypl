@@ -1,0 +1,129 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background:  linear-gradient(#afbed8,1%,#b3d1ff);
+  color: black;
+  font-family: 'Encode Sans Semi Condensed', Verdana;
+
+}
+
+#blue-ground {
+ margin-left:0;
+ margin-right:0;
+ /*margin: -8px;*/
+}
+
+.blue-ground {
+  background-color: #b3d1ff;
+ }
+
+/*Code Style Taken from W3Schools
+https://www.w3schools.com/TAGs/tag_code.asp
+*/
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+
+section {
+ margin: 1em;
+ padding: 1em;
+ background-color:#ffffe6;
+ border-radius: 12px;
+}
+
+/*Refactor together as an exercise*/
+
+#example1{
+  padding:1em;
+  background-color:#b3d1ff;
+  border-style:outset;
+  border-width: 10px;
+  border-radius: 5px;
+}
+
+
+#example0{
+  padding:1em;
+  background-color:#b3d1ff;
+  border-style:outset;
+  border-width: 10px;
+  border-radius: 5px;
+}
+
+#examples2{
+  padding:1em;
+  background-color:#b3d1ff;
+  border-style:outset;
+  border-width: 10px;
+  border-radius: 5px;
+}
+
+#examples3{
+  padding:1em;
+  background-color:#b3d1ff;
+  border-style:outset;
+  border-width: 10px;
+  border-radius: 5px;
+}
+
+#examples4{
+  padding:1em;
+  background-color:#b3d1ff;
+  border-style:outset;
+  border-width: 10px;
+  border-radius: 5px;
+}
+
+
+
+.toggleDisplayNone{
+ display:none;
+}
+
+button{
+  text-align: center;
+  color:rgb(36, 35, 35);
+  background-color:	 #ffccff;
+  border-radius: 8px;
+  padding: 2px 2em 2px 2em;
+  margin-bottom: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+#titles{
+ text-align: center;
+}
+
+#movie-blog{
+   background:  linear-gradient(#b3d1ff,#afbed8);
+   text-align: center;
+}
+
+#side-by-side{
+   display: flex;
+   justify-content: center;
+}
+
+article{
+ padding: 0 1em 1em 1em;
+ text-align: left;
+ width: 45%;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.participant-site{
+  text-align: center;
+}

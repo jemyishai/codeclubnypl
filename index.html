@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The web site of codeclubnypl</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Following links are to set up in browser editing -->
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js" integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/base16-dark.css">
+    <script src='./autorefresh.js'/></script>
+
+
+  </head>
+  <body id="mainBody">
+    <div id="blue-ground" class="blue-ground">
+      <h1>Code Club</h1>
+
+
+      <section>
+        <p>October 2021</p>
+           We moved onto volume 4, discussed
+          <a
+            href="https://trinket.io/python/72fa5cc673"
+            target="_blank"
+            rel="noopener noreferrer"
+            >loops</a
+          >,
+          and reviewed functions!
+
+             <br /> <br />
+
+          <button id="show-python-btn-loops">View Python Example - Loops </button>
+              <button
+              id="hide-python-btn-loops"
+              class="toggleDisplayNone">
+                Hide Python - - Loops</button>
+                <hr />
+
+
+          <div id="python-example-loops" class="toggleDisplayNone">
+            <textarea id="editor-python-loops">
+import turtle
+tina = turtle.Turtle()
+tina.shape("turtle")
+
+#ToDefeatTheCreep is a function in the comics
+#can you make a function out of the following code block?
+
+for x in range(0,4):
+  for x in range(0,3):
+    #forward was 15 in the comic but this is arbitrary
+    turtle.forward(45)
+    turtle.right(90)
+  turtle.left(180)
+            </textarea>
+        </div>
+
+
+          <script type="module">
+                import {toggle} from './toggle.js';
+                import {editorWrapper} from './editor.js';
+                toggle("show-python-btn-loops","hide-python-btn-loops","python-example-loops");
+                editorWrapper('editor-python-loops');
+          </script>
+      </section>
+
+      <section>
+        <p>September 2021</p>
+           We focused on if else statements
+          <a
+            href="https://trinket.io/python/5358295b33?e=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            >using a few examples like this</a
+          >
+          and  <a
+            href="https://trinket.io/python/919397f46a"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          this </a>
+
+          discussed volume 3!
+
+             <br /> <br />
+
+
+          <button id="show-python-btn-if">View Python Example - if</button>
+              <button
+              id="hide-python-btn-if"
+              class="toggleDisplayNone">
+                Hide Python Example 1 - - Clear If Statement</button>
+
+
+
+          <div id="python-example-if" class="toggleDisplayNone">
+            <textarea id="if-statement">
+                    x = 3
+
+                    # print x
+
+                    # Just an if statemet
+
+                    # if x == 3:
+                    #   print 'x equals three'
+
+
+                    # two if statements in a row
+                    # if x == 3:
+                    #   print 'x equals three'
+                    # if x !=2 :
+                    #   print 'x DOES NOT equal two'
+
+                    # if else statement
+
+                    if x == 3:
+                      print 'x equals three'
+                    else:
+                      print 'x DOES NOT equal two'
+
+                    # if elif (else if), else
+
+                    if x == 3:
+                      print 'x equals three'
+                    elif x == 4:
+                      print 'x equals four'
+                    else:
+                      print 'x is not three or four'
+
+
+
+
+                    def portal():
+                      # tina.pendown()
+                      tina.forward(15)
+                      tina.left(60)
+                      tina.forward(15)
+                      tina.right(180)
+                      tina.forward(15)
+                      tina.left(60)
+
+          </textarea>
+          <script type="module">
+                import {editorWrapper} from './editor.js';
+                import {toggle} from './toggle.js';
+                toggle("show-python-btn-if","hide-python-btn-if","python-example-if");
+                editorWrapper('if-statement')
+          </script>
+          </div>
+
+
+
+                <hr />
+<button id="show-python-btn-if-again">View Python Example - if again</button>
+              <button
+              id="hide-python-btn-if-again"
+              class="toggleDisplayNone">
+                Hide Python Example 1 - Clear If Again Statement</button>
+
+          <div id="python-example-if-again" class="toggleDisplayNone">
+            <textarea id="if-again">
+                  x = input('what is the number?')
+                  if int(x) < 7:
+                     print 'go left'
+                  else:
+                     print 'go right'
+
+
+                  # def secret_passage(num):
+                  #   y = input('function: what is the number?')
+                  #   if int(y) <textarea num:
+                  #     print 'go left'
+                  #   else:
+                  #     print 'go right'
+
+                  # secret_passage(7)
+                  # secret_passage(7)
+
+
+          </textarea>
+          <script type="module">
+                import {editorWrapper} from './editor.js';
+                import {toggle} from './toggle.js';
+                toggle("show-python-btn-if-again","hide-python-btn-if-again","python-example-if-again");
+                editorWrapper('if-again')
+          </script>
+
+          </div>
+
+      </section>
+
+<section>
+        <p>August 2021</p>
+           We reviewed code from July, focusing on the
+          <a
+            href="https://trinket.io/python/22c29fe8c0"
+            target="_blank"
+            rel="noopener noreferrer"
+            >portal remix </a
+          >
+          and introduced volume 3!
+
+             <br /> <br />
+
+          <button id="show-python-btn-portal-remix">View Python Example - Portal Remix</button>
+              <button
+              id="hide-python-btn-portal-remix"
+              class="toggleDisplayNone">
+                Hide Python Example 1 - - Clear Portal Remix</button>
+                <hr />
+
+
+          <div id="python-example-portal-remix" class="toggleDisplayNone">
+            <textarea id="portal-remix">
+                    import turtle
+                    tina = turtle.Turtle()
+                    tina.shape("turtle")
+                    sc = turtle.Screen()
+
+                    # initial portal
+                    # aka josh rules
+
+                    def portal():
+                      tina.forward(15)
+                      tina.left(60)
+                      tina.forward(15)
+                      tina.right(180)
+                      tina.forward(15)
+                      tina.left(60)
+
+                    # portal()
+                    # portal()
+                    # portal()
+                    # portal()
+                    # portal()
+                    # portal()
+
+                    # this is fun
+                    # tina.ondrag(turtle.goto)
+
+
+                    def move(x, y):
+                      tina.penup()
+                      tina.goto(x, y)
+
+                    sc.onclick(move)
+
+                    def draw(x, y):
+                      tina.pendown()
+                      portal()
+
+                    tina.onclick(draw)
+
+
+                    # for x in range(0,6):
+                    #     portal()
+
+          </textarea>
+          <script type="module">
+            import {editorWrapper} from './editor.js';
+            import {toggle} from './toggle.js';
+            toggle("show-python-btn-portal-remix","hide-python-btn-portal-remix","python-example-portal-remix");
+            editorWrapper("portal-remix");
+           </script>
+          </div>
+
+
+
+
+      </section>
+
+
+    <section>
+        <p>July 2021</p>
+          We continued our <em>Secret Coders</em> Club, focusing on volume 2 of Gene Luen Yang's great series. We coded similar activities in Python on
+          <a
+            href="https://trinket.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >trinket</a
+          >.
+          <br /> <br />
+
+
+           <button id="show-python-btn-portal">View Python Example - Portal</button>
+              <button
+              id="hide-python-btn-portal"
+              class="toggleDisplayNone">
+                Hide Python Example 1 - - Clear Portal</button>
+                <hr />
+
+
+          <div id="python-example-portal" class="toggleDisplayNone">
+            <textarea id="portal">
+                    import turtle
+                    tina = turtle.Turtle()
+                    tina.shape("turtle")
+
+                    # initial portal
+                    # aka josh rules
+
+                    def portal():
+                      tina.forward(15)
+                      tina.left(60)
+                      tina.forward(15)
+                      tina.right(180)
+                      tina.forward(15)
+                      tina.left(60)
+
+                    portal()
+                    portal()
+                    portal()
+                    portal()
+                    portal()
+                    portal()
+
+                    # for x in range(0,6):
+                    #     portal()
+          </textarea>
+
+          <script type="module">
+            import {editorWrapper} from './editor.js';
+            import {toggle} from './toggle.js';
+            toggle("show-python-btn-portal","hide-python-btn-portal","python-example-portal");
+            editorWrapper("portal")
+           </script>
+          </div>
+
+
+          <button id="show-python-btn-snowflake">View Python Example - Snowflake</button>
+              <button
+              id="hide-python-btn-snowflake"
+              class="toggleDisplayNone">
+                Hide Python Example 2 - - Snowflake</button>
+                <hr />
+
+
+          <div id="python-example-snowflake" class="toggleDisplayNone">
+            <textarea id="snowflake">
+                import turtle
+                tina = turtle.Turtle()
+                tina.shape("turtle")
+
+                # snowflake
+
+                tina.forward(20)
+                tina.right(120)
+
+                def needs_to_be_repeated_6():
+                  tina.left(60)
+                  tina.forward(20)
+                  tina.right(120)
+                  tina.forward(20)
+
+                for x in range(0,6):
+                    needs_to_be_repeated_6()
+
+                tina.left(120)
+                tina.back(20)
+
+                def also_needs_to_be_repeated_6():
+                  tina.forward(40)
+                  tina.back(10)
+                  tina.right(60)
+                  tina.forward(10)
+                  tina.back(10)
+                  tina.left(120)
+                  tina.forward(10)
+                  tina.back(10)
+                  tina.right(60)
+                  tina.back(30)
+                  tina.right(60)
+
+                for x in range(0,6):
+                    also_needs_to_be_repeated_6()
+          </textarea>
+
+          </div>
+          <script type="module">
+            import {editorWrapper} from './editor.js';
+            import {toggle} from './toggle.js';
+            toggle("show-python-btn-snowflake","hide-python-btn-snowflake","python-example-snowflake");
+            editorWrapper("snowflake");
+           </script>
+
+               <button id="show-python-btn-rope">View Python Example - Rope</button>
+              <button
+              id="hide-python-btn-rope"
+              class="toggleDisplayNone">
+                Hide Python Example 3 - - Rope</button>
+                <hr />
+
+
+          <div id="python-example-rope" class="toggleDisplayNone">
+            <textarea id="rope">
+                import turtle
+                tina = turtle.Turtle()
+                tina.shape("turtle")
+                hose = 20
+
+                # trapTheRugbyGuy aka GoodRiddanceJerkfaces
+
+
+
+                def trap(amount):
+                  # print(amount)
+                  tina.forward(hose)
+                  amount = amount-1
+                  tina.right(35)
+
+                for x in range(0,20):
+                  trap(hose)
+
+          </textarea>
+          </div>
+
+          <script type="module">
+            import {editorWrapper} from './editor.js';
+            import {toggle} from './toggle.js';
+            toggle("show-python-btn-rope","hide-python-btn-rope","python-example-rope");
+            editorWrapper("rope");
+           </script>
+
+               <button id="show-python-btn-square">View Python Example - Square</button>
+              <button
+              id="hide-python-btn-square"
+              class="toggleDisplayNone">
+                Hide Python Example 4 - - Square</button>
+                <hr />
+
+
+          <div id="python-example-square" class="toggleDisplayNone">
+            <textarea id="square">
+              import turtle
+              import random
+
+              tina = turtle.Turtle()
+              tina.shape("turtle")
+
+              # DrawSquare
+
+              # print(random.randint(3, 9))
+
+              # def lots_of_squares():
+
+              length = random.randint(1, 100)
+
+              def square(length):
+                tina.forward(length)
+                tina.right(90)
+
+              for x in range(0,4):
+                square(length)
+
+
+              # for x in range(1,100):
+              #   lots_of_squares()
+
+          </textarea>
+          </div>
+
+          <script type="module">
+            import {editorWrapper} from './editor.js';
+            import {toggle} from './toggle.js';
+            toggle("show-python-btn-square","hide-python-btn-square","python-example-square");
+            editorWrapper("square");
+           </script>
+
+      </section>
+
+      <section>
+        <p>June 2021</p>
+         We officially started our
+         <em><a
+         href="https://browse.nypl.org/iii/encore/record/C__Rb21717345__Ssecret%20coders__Orightresult__U__X7?lang=eng&suite=def"
+         target="_blank"
+          rel="noopener noreferrer"
+            >
+         Secret Coders</a></em> Club, following along with Gene Luen Yang's great graphic novel. We coded similar activities in Python on
+          <a
+            href="https://trinket.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >trinket</a
+          >.
+          <br /> <br />
+
+          <button id="show-python-btn-1">View Python Example - Clear Sidewalk</button>
+              <button
+              id="hide-python-btn-1"
+              class="toggleDisplayNone">
+                Hide Python Example 1 - - Clear Sidewalk</button>
+                <hr />
+
+
+          <div id="python-example0" class="toggleDisplayNone">
+            <textarea id="clear-sidewalk">
+            import turtle
+            tina = turtle.Turtle()
+            tina.shape("turtle")
+
+            # clear sidewalk :)
+
+            tina.forward(40)
+            tina.left(90)
+            tina.forward(10)
+
+            #PD
+            tina.forward(80)
+            tina.right(90)
+            tina.forward(60)
+            tina.right(90)
+            tina.forward(80)
+            tina.right(90)
+            tina.forward(60)
+          </textarea>
+
+          </div>
+
+
+
+              <div id="python-example0" class="toggleDisplayNone">
+
+                <!-- insert python here-->
+                <pre>
+                import turtle
+                tina = turtle.Turtle()
+                tina.shape("turtle")
+
+                # clear sidewalk :)
+
+                tina.forward(40)
+                tina.left(90)
+                tina.forward(10)
+
+                #PD
+                tina.forward(80)
+                tina.right(90)
+                tina.forward(60)
+                tina.right(90)
+                tina.forward(80)
+                tina.right(90)
+                tina.forward(60)
+              </pre>
+              </div>
+
+
+
+              <button id="show-python-btn-2">View Python Example - Open Sesame</button>
+            <button
+            id="hide-python-btn-2"
+            class="toggleDisplayNone">
+              Hide Python Example 2 - Open Sesame</button>
+
+              <div id="python-example1" class="toggleDisplayNone">
+                  <textarea id="open-sesame">
+                    import turtle
+                    tina = turtle.Turtle()
+                    tina.shape("turtle")
+
+                    # open sesame
+
+                    #repeat 6 times
+                    def open_sesame():
+                      tina.forward(50) # 15 in comic
+                      tina.right(60)
+
+                    open_sesame()
+                    # open_sesame()
+                    # open_sesame()
+                    # open_sesame()
+                    # open_sesame()
+                    # open_sesame()
+
+                    # for x in range(0,6):
+                    #     open_sesame()
+                  </textarea>
+                </div>
+
+
+              <script type="module">
+                import {editorWrapper} from './editor.js';
+                import {toggle} from './toggle.js';
+                toggle("show-python-btn-1","hide-python-btn-1","python-example0");
+                editorWrapper("clear-sidewalk");
+               </script>
+
+              <script type="module">
+                import {editorWrapper} from './editor.js';
+                import {toggle} from './toggle.js';
+                toggle("show-python-btn-2","hide-python-btn-2","python-example1");
+                editorWrapper("open-sesame");
+              </script>
+
+
+
+      </section>
+
+
+
+      <section>
+        <p>May 2021</p>
+          We focused on on variables and functions using <a
+          href="https://trinket.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >trinket</a
+        > and started working on chatbots.
+<br/>
+       <p class="participant-site">
+            <a
+            href="https://aisidoro11111-gmail-com.trinket.io/sites/python-bf4158ba42"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            Club Member's Doggo Chatbot</a>
+        </p>
+
+      </section>
+
+      <section>
+        <p>April 2021</p>
+           We learned how to use
+          <a
+            href="https://www.codecademy.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >codecademy</a
+          >
+          and how it can help us learn how to make web sites.
+
+      </section>
+
+      <section>
+        <p>March 2021</p>
+
+          We learned how to use
+          <a
+            href="https://www.freecodecamp.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >freecodecamp.org</a
+          >
+          and how it can help us<br/>
+        Note: We changed schedules to just Thursdays.
+      </section>
+
+      <section>
+        <p>February 2021</p>
+        Tuesdays: Beginners (learn HTML/CSS/JS) DOM Manipulation | Thursdays: Movie &amp; Comics
+        Blogging <br />
+<p class="participant-site">
+        Club Member's Sites: <br/>
+        <a
+            href="https://theworldsgreatestwebsite.neocities.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >World's Greatest</a
+          > <br />
+          <a
+          href="https://cyn2296.neocities.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Cyn 2296</a
+        > <br/>
+        <a
+        href="https://123games.neocities.org"
+        target="_blank"
+        rel="noopener noreferrer"
+        >123 Games</a
+      > 
+      </p>
+        <br />
+        Note: We did not meet on the last Thursday of February.
+      </section>
+
+      <!--https://out-of-the-box-site.neocities.org/-->
+
+      <section>
+        <p>
+          2020 & January 2021
+          The following section includes some examples and exercises we worked
+          through together in January 2021 (and from 2020) to learn about DOM manipulation:
+          <ul>
+            <li>CSS: classes & ids</li>
+            <li>Basic JavaScript</li>
+            <li>Virtual DOM</li>
+          </ul>
+          <p>
+            Remember to be mindful of the classes and ids that may be need to be
+            added to other html elements on your page.
+          </p>
+        </p>
+        <button id="show0">View Example 0</button>
+        <button id="hide0" class="toggleDisplayNone">Hide Example 0</button>
+
+        <!--Refactor all toggle-ability and JS together as an exercise -->
+
+
+        <script type="module">
+          import {toggle} from './toggle.js';
+          toggle("show0","hide0","example0");
+         </script>
+
+        <div id="example0" class="toggleDisplayNone">
+          <!--
+
+             <h2> Youre name is : <div id='name'> </div> </h2>
+
+              let name = prompt('Enter your name');
+                  alert('Your name is: '+ name);
+                  let nameDiv = document.getElementById('name');
+                  nameDiv.innerText = name
+                  -->
+          <p>Example 0 - start typing and then click anywhere on the page</p>
+          <input
+            type="text"
+            placeholder="Type something here, then click outside of the field."
+            size="100"
+          />
+          <p id="log"></p>
+          <script>
+            let input = document.querySelector("input");
+            let log = document.getElementById("log");
+
+            input.onchange = handleChange;
+
+            function handleChange(e) {
+              log.textContent = `The text's value is ${e.target.value.length} character(s) long.`;
+            }
+          </script>
+          <hr />
+          <p>Here is the HTML:</p>
+          <pre>
+                         &lt;input type="text" placeholder="Type something here, then click outside of the field." size="100"&gt;
+                         &lt;p id="log"&gt;&lt;/p&gt;
+                    </pre
+          >
+          <p>
+            If the following JavaScript is in your HTML file, you need to place
+            the code between an opening <code>script</code> tag and a closing
+            <code>script</code> tag. For review & examples of how to use the
+            script tag, please view this
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#basic_usage"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              MDN page</a
+            >.
+          </p>
+          <pre>
+                         let input = document.querySelector('input');
+                         let log = document.getElementById('log');
+                         input.onchange = handleChange;
+                         function handleChange(e) {
+                            log.textContent = `The text's value is ${e.target.value.length} character(s) long.`;
+                         }
+              </pre
+          >
+        </div>
+        <hr />
+        <button id="show1">View Example 1</button>
+        <button id="hide1" class="toggleDisplayNone">Hide Example 1</button>
+
+        <script type="module">
+          import {toggle} from './toggle.js';
+          toggle("show1","hide1","example1");
+         </script>
+
+        <div id="example1" class="toggleDisplayNone">
+          <p>Example 1 - watch the 2nd item when you click the button</p>
+          <ol>
+            <li class="main2">i love javascript</li>
+            <li class="main2">i like codeclub</li>
+            <li class="main2">let's build cool projects</li>
+          </ol>
+          <button id="btn">click me</button>
+          <script>
+            const btn = document.getElementById("btn");
+            btn.addEventListener("click", function alterItem() {
+              let main = document.getElementsByClassName("main2");
+              main[1].innerHTML =
+                "enough of these exercises. let's build a cool site already";
+            });
+          </script>
+          <hr />
+          <p>Here is the HTML:</p>
+          <pre>
+                        &lt;ol&gt;
+                          &lt;li class="main2"&gt; i love javascript&lt;/li&gt;
+                          &lt;li class="main2"&gt; i like codeclub&lt;/li&gt;
+                          &lt;li class="main2"&gt; let's build cool projects&lt;/li&gt;
+                        &lt;/ol&gt;
+                       &lt;button id="btn"&gt;click me&lt;/button&gt;
+                    </pre
+          >
+          <p>
+            If the following JavaScript is in your HTML file, you need to place
+            the code between an opening <code>script</code> tag and a closing
+            <code>script</code> tag. For review & examples of how to use the
+            script tag, please view this
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#basic_usage"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              MDN page</a
+            >.
+          </p>
+          <pre>
+                 const btn = document.getElementById('btn')
+                        btn.addEventListener('click', function alterItem(){
+                            let main = document.getElementsByClassName("main2");
+                            main[1].innerHTML = 'enough of these exercises. let\'s build a cool site already';
+                        })
+                </pre
+          >
+          <!--End example 1 div-->
+        </div>
+        <hr />
+
+        <button id="show2">View Example 2</button>
+        <button id="hide2" class="toggleDisplayNone">Hide Example 2</button>
+        <script type="module">
+          import {toggle} from './toggle.js';
+          toggle("show2","hide2","examples2");
+         </script>
+
+        <div id="examples2" class="toggleDisplayNone">
+          <p>Example 2 - click the button to change the texts</p>
+          <p class="p-elements">Let's Make a Site About One Piece</p>
+          <p class="p-elements">Let's make a site about Attack on Titan</p>
+          <p class="p-elements">Let's Make a K-Pop fansite</p>
+          <button id="btn2">click me</button>
+
+          <script>
+            const btn2 = document.getElementById("btn2");
+            btn2.addEventListener("click", function main() {
+              let mainItem = document.getElementsByClassName("p-elements");
+              mainItem[0].innerHTML = "MANGA!!";
+              mainItem[1].innerHTML = "COMICS!!";
+              mainItem[2].innerHTML = "MOVIES!!";
+            });
+          </script>
+          <hr />
+          <p>Here is the HTML:</p>
+          <pre>
+                        &lt;p class="p-elements"&gt;Let's Make a Site About One Piece&lt;/p&gt;
+                        &lt;p class="p-elements"&gt;Let's make a site about Attack on Titan&lt;/p&gt;
+                        &lt;p class="p-elements"&gt;Let's Make a K-Pop fansite&lt;/p&gt;
+                        &lt;button id="btn2"&gt;click me&lt;/button&gt;
+                    </pre
+          >
+          <p>
+            If the following JavaScript is in your HTML file, you need to place
+            the code between an opening <code>script</code> tag and a closing
+            <code>script</code> tag. For review & examples of how to use the
+            script tag, please view this
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#basic_usage"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              MDN page</a
+            >.
+          </p>
+          <pre>
+                  const btn2 = document.getElementById('btn2')
+                      btn2.addEventListener('click', function main(){
+                          let mainItem = document.getElementsByClassName('p-elements');
+                          mainItem[0].innerHTML = 'MANGA!!';
+                          mainItem[1].innerHTML = 'COMICS!!';
+                          mainItem[2].innerHTML = 'MOVIES!!';
+                      })
+                </pre
+          >
+        </div>
+        <hr />
+        <button id="show3">View Example 3</button>
+        <button id="hide3" class="toggleDisplayNone">Hide Example 3</button>
+        <script type="module">
+          import {toggle} from './toggle.js';
+          toggle("show3","hide3","examples3");
+         </script>
+
+        <div id="examples3" class="toggleDisplayNone">
+          <p>Example 3 - click to add a child element</p>
+          <div id="parent">Is something going below this?</div>
+          <button id="button3">Click me to add a child element</button>
+          <script>
+            const button3 = document.getElementById("button3");
+            button3.addEventListener("click", function master() {
+              const createDiv = document.createElement("div");
+              createDiv.innerHTML = "is this child below the parent?";
+              document.getElementById("parent").appendChild(createDiv);
+            });
+          </script>
+          <hr />
+          <p>Here is the HTML:</p>
+          <pre>
+                         &lt;div id="parent"&gt;Is something going below this? &lt;/div&gt;
+                         &lt;button id="button3"&gt;Click me to add a child element &lt;/button&gt;
+                    </pre
+          >
+          <p>
+            If the following JavaScript is in your HTML file, you need to place
+            the code between an opening <code>script</code> tag and a closing
+            <code>script</code> tag. For review & examples of how to use the
+            script tag, please view this
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#basic_usage"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              MDN page</a
+            >.
+          </p>
+          <pre>
+                  const button3 = document.getElementById("button3")
+                  button3.addEventListener('click', function master(){
+                    const createDiv = document.createElement('div')
+                    createDiv.innerHTML = 'is this child below the parent?'
+                    document.getElementById("parent").appendChild(createDiv)
+                        })
+                </pre
+          >
+        </div>
+
+        <hr />
+
+        <button id="show4">View Example 4</button>
+        <button id="hide4" class="toggleDisplayNone">Hide Example 4</button>
+        <script type="module">
+          import {toggle} from './toggle.js';
+          toggle("show4","hide4","examples4");
+         </script>
+
+        <div id="examples4" class="toggleDisplayNone">
+          <p>Example 4 - click the button and add some style !</p>
+          <p>
+            <strong
+              >This exercise requires adding an id to the body tag of the entire
+              page - not just the HTML included in the example</strong
+            >
+          </p>
+          <style>
+            .newP {
+              background-color: hotpink;
+            }
+            .button {
+              background-color: blueviolet;
+              width: 200px;
+              border: none;
+              font-size: 2rem;
+              padding: 0.5rem;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+          </style>
+
+          <button id="mainButton">Click me</button>
+          <script>
+            const buttonEl = document.getElementById("mainButton");
+            const bodyEl = document.getElementById("blue-ground");
+            buttonEl.addEventListener("click", addFunction);
+
+            function addFunction() {
+              buttonEl.classList.add("button");
+              bodyEl.classList.remove("blue-ground");
+              bodyEl.classList.add("newP");
+            }
+          </script>
+          <hr />
+          <p>Here is the HTML:</p>
+          <pre>
+                          &lt;button id="mainButton"&gt;Click me&lt;/button&gt;
+                    </pre
+          >
+          <p>
+            This exercise requires extra sytle. Be sure to have unique id names.
+            If you're not using an external style sheet and would like to review
+            the <code>style</code> html tags, please view this
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              MDN page</a
+            >.
+          </p>
+          <pre>
+                      &lt;style&gt;
+                        .newP{
+                             background-color: hotpink;
+                         }
+                         .button{
+                             background-color: blueviolet;
+                             width: 200px;
+                             border: none;
+                             font-size: 2rem;
+                             padding: 0.5rem;
+                             border-radius: 5px;
+                             cursor: pointer;
+                         }
+                      &lt;/style&gt;
+                    </pre
+          >
+          <p>
+            If the following JavaScript is in your HTML file, you need to place
+            the code between an opening <code>script</code> tag and a closing
+            <code>script</code> tag. For review & examples of how to use the
+            script tag, please view this
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#basic_usage"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              MDN page</a
+            >.
+          </p>
+          <pre>
+                    const buttonEl = document.getElementById('mainButton')
+                       const bodyEl = document.getElementById('mainBody')
+                       buttonEl.addEventListener('click', addFunction)
+
+                       function addFunction(){
+                       buttonEl.classList.add('button')
+                       bodyEl.classList.remove('blue-ground');
+                       bodyEl.classList.add('newP')
+                       }
+                </pre
+          >
+        </div>
+      </section>
+
+      <section id="titles">
+        <h4><em>Code Club Book Club</em></h4>
+        <p>Great titles from the NYPL collection:</p>
+        <p>
+          <a
+            href="http://ilsstaff.nypl.org/record=b21717345"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Secret Coders by Gene Luen Yang & Mike Holmes
+          </a>
+          <br /><br />
+          <a
+            href="http://ilsstaff.nypl.org/record=b21717345"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Debian Perl by Mel Hilario and Lauren Davis
+          </a>
+        </p>
+
+        <p>
+          And let's not forget NeoCities great tutorials! To learn more
+          HTML/CSS, check out these
+          <a
+            href="https://neocities.org/tutorials"
+            target="_blank"
+            rel="noopener noreferrer"
+            >tutorials</a
+          >!
+        </p>
+      </section>
+      <!-- the following div is the blue div background -->
+    </div>
+
+    <section id="movie-blog">
+      <h3>Henry's Movie Review</h3>
+
+      <div id="side-by-side">
+        <article>
+          Mad Max: Fury Road, a boisterous love letter to action movies,
+          provides surprising emotional depth for its viewers. Leading the
+          production was George Miller, the director or the original series. The
+          action and tension in each scene is almost palpable, due in no small
+          part to the fact that almost all of the action was done using
+          practical effects - meaning little to no CGI was used. Tom Hardy does
+          a good job in a role that, admittedly, requires few lines, meaning
+          facial expressions are all the more important in telling his story.
+          Standing apart from the rest of the crowd, however, is Charlize
+          Theron, whose character, Furiosa, seems to jump out of the screen in
+          her intensity. You don’t have to be in the windswept sand dunes of
+          Australia to enjoy this movie - even while sitting on the couch, the
+          believably unbelievable action sequences will suck you into the film.
+        </article>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/hEJnMQG9ev8"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <section id="movie-blog">
+      <h3>Henry's Comic Review</h3>
+
+      <div id="side-by-side">
+        <article>
+          <p>
+            I think I knew that Saga would be unlike most things I had ever read
+            when I read the blurb on the back of the first volume:
+          </p>
+          <p>
+            When two soldiers from opposite sides of a never-ending galactic war
+            fall in love, they risk everything to bring a fragile new life into
+            a dangerous old universe. From bestselling writer Brian K. Vaughan,
+            Saga is the sweeping tale of one young family fighting to find their
+            place in the world. (Saga, vol. 1)
+          </p>
+          <p>
+            It grabbed me, and I had more than a few questions. What would the
+            scope of this story be? How would the hype (12 Eisner awards for
+            story, artwork and writing over the course of its 8 year run)
+            compare to the real thing? (Amin) What even is a space opera,
+            anyway? All of these and more were answered as I devoured the first
+            volume (and yes, it did live up to the hype).
+          </p>
+          <p>
+            Saga doesn’t have many boundaries - both in terms of subject matter
+            and setting - and more than anything else, that serves as a tool for
+            writer Brian K. Vaugn (writer) and artist Fiona Staples (artist) as
+            they flex their creative talent. Vaughan has even said that he
+            doesn’t “think the technology or financial model exists yet to
+            realistically make ‘Saga’ work as either a television series or a
+            feature,” though he’s “open to being proved wrong.” (Renaud) As
+            such, it’s not uncommon to see anthropomorphized animals, humanoid
+            robots and even planet-sized demons explode onto the page, laid out
+            in sometimes surprisingly violent fashion and with incredible
+            artistry. Standing in contrast to this, however, are scenes of great
+            intimacy, focused on spending time with characters as they navigate
+            the more mundane aspects of their lives (comprising one set of
+            issues, for example, is a character’s time in preschool). Known for
+            its stark depictions of war and grief, Saga’s characters struggle
+            with problems of identity and trauma, all the while navigating the
+            (seemingly) impossible task of learning what it means to be part of
+            a family.
+          </p>
+        </article>
+
+        <img
+          src="./saga_comic.jpeg"
+          alt="Saga Comic Marko & Prince Robot"
+          class="responsive"
+        />
+      </div>
+    </section>
+  </body>
+</html>
