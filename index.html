@@ -25,13 +25,60 @@
     <nav class="nav-bar">
       <ul>
       <li><a href="#movie-blog">VolunTeen Blogging</a></li>
-      <li><a href="#blue-ground">Code Club</a></li>
+      <li><a href="#code-club">Code Club</a></li>
     </ul>
     </nav>
 
-    <div id="blue-ground" class="blue-ground">
+    <div id="code-club" class="code-club-nypl">
       <h1>Code Club</h1>
 
+      <section>
+        <p>November 2021</p>
+           We moved onto volume 5, and continued our discussion of loops within loops
+          <a
+            href="https://trinket.io/python/7210a56e99"
+            target="_blank"
+            rel="noopener noreferrer"
+            >loops</a
+          >,
+          and reviewed functions!
+
+             <br /> <br />
+
+          <button id="show-python-btn-loops-loops">View Example - Escape Ducks with Teeth</button>
+              <button
+              id="hide-python-btn-loops-loops"
+              class="toggleDisplayNone">
+                Hide Python - - Loops</button>
+                <hr />
+
+
+          <div id="python-example-loops-loops" class="toggleDisplayNone">
+            <textarea id="editor-python-loops-loops">
+import turtle
+tina = turtle.Turtle()
+tina.shape("turtle")
+
+#EscapeDucksWithTeeth
+
+for x in range(0,10):
+  for x in range(0,4):
+    #value in comics was 10 - play with other values
+    turtle.forward(40)
+    turtle.right(90)
+     #value in comics was 10 - play with other values
+  turtle.forward(40)
+            </textarea>
+        </div>
+
+
+          <script type="module">
+                import {toggle} from './toggle.js';
+                import {editorWrapper} from './editor.js';
+                toggle("show-python-btn-loops-loops","hide-python-btn-loops-loops","python-example-loops-loops");
+                editorWrapper('editor-python-loops-loops');
+          </script>
+      </section>
 
       <section>
         <p>October 2021</p>
@@ -112,49 +159,38 @@ for x in range(0,4):
 
           <div id="python-example-if" class="toggleDisplayNone">
             <textarea id="if-statement">
-                    x = 3
-
-                    # print x
-
-                    # Just an if statemet
-
-                    # if x == 3:
-                    #   print 'x equals three'
-
-
-                    # two if statements in a row
-                    # if x == 3:
-                    #   print 'x equals three'
-                    # if x !=2 :
-                    #   print 'x DOES NOT equal two'
-
-                    # if else statement
-
-                    if x == 3:
-                      print 'x equals three'
-                    else:
-                      print 'x DOES NOT equal two'
-
-                    # if elif (else if), else
-
-                    if x == 3:
-                      print 'x equals three'
-                    elif x == 4:
-                      print 'x equals four'
-                    else:
-                      print 'x is not three or four'
+x = 3
+# print x
+# Just an if statemet
+# if x == 3:
+#   print 'x equals three'
+# two if statements in a row
+# if x == 3:
+#   print 'x equals three'
+# if x !=2 :
+#   print 'x DOES NOT equal two'
+# if else statement
+if x == 3:
+  print 'x equals three'
+else:
+  print 'x DOES NOT equal two'
+# if elif (else if), else
+if x == 3:
+  print 'x equals three'
+elif x == 4:
+  print 'x equals four'
+else:
+  print 'x is not three or four'
 
 
-
-
-                    def portal():
-                      # tina.pendown()
-                      tina.forward(15)
-                      tina.left(60)
-                      tina.forward(15)
-                      tina.right(180)
-                      tina.forward(15)
-                      tina.left(60)
+def portal():
+  # tina.pendown()
+  tina.forward(15)
+  tina.left(60)
+  tina.forward(15)
+  tina.right(180)
+  tina.forward(15)
+  tina.left(60)
 
           </textarea>
           <script type="module">
@@ -176,22 +212,18 @@ for x in range(0,4):
 
           <div id="python-example-if-again" class="toggleDisplayNone">
             <textarea id="if-again">
-                  x = input('what is the number?')
-                  if int(x) < 7:
-                     print 'go left'
-                  else:
-                     print 'go right'
-
-
-                  # def secret_passage(num):
-                  #   y = input('function: what is the number?')
-                  #   if int(y) <textarea num:
-                  #     print 'go left'
-                  #   else:
-                  #     print 'go right'
-
-                  # secret_passage(7)
-                  # secret_passage(7)
+x = input('what is the number?')
+if int(x) < 7:
+   print 'go left'
+else:
+   print 'go right'# def secret_passage(num):
+#   y = input('function: what is the number?')
+#   if int(y) <textarea num:
+#     print 'go left'
+#   else:
+#     print 'go right'
+# secret_passage(7)
+# secret_passage(7)
 
 
           </textarea>
@@ -229,48 +261,48 @@ for x in range(0,4):
 
           <div id="python-example-portal-remix" class="toggleDisplayNone">
             <textarea id="portal-remix">
-                    import turtle
-                    tina = turtle.Turtle()
-                    tina.shape("turtle")
-                    sc = turtle.Screen()
+import turtle
+tina = turtle.Turtle()
+tina.shape("turtle")
+sc = turtle.Screen()
 
-                    # initial portal
-                    # aka josh rules
+# initial portal
+ # aka josh rules
 
-                    def portal():
-                      tina.forward(15)
-                      tina.left(60)
-                      tina.forward(15)
-                      tina.right(180)
-                      tina.forward(15)
-                      tina.left(60)
+def portal():
+   tina.forward(15)
+   tina.left(60)
+   tina.forward(15)
+   tina.right(180)
+   tina.forward(15)
+   tina.left(60)
 
-                    # portal()
-                    # portal()
-                    # portal()
-                    # portal()
-                    # portal()
-                    # portal()
+# portal()
+ # portal()
+ # portal()
+ # portal()
+ # portal()
+ # portal()
 
-                    # this is fun
-                    # tina.ondrag(turtle.goto)
-
-
-                    def move(x, y):
-                      tina.penup()
-                      tina.goto(x, y)
-
-                    sc.onclick(move)
-
-                    def draw(x, y):
-                      tina.pendown()
-                      portal()
-
-                    tina.onclick(draw)
+# this is fun
+ # tina.ondrag(turtle.goto)
 
 
-                    # for x in range(0,6):
-                    #     portal()
+def move(x, y):
+  tina.penup()
+  tina.goto(x, y)
+
+sc.onclick(move)
+
+def draw(x, y):
+  tina.pendown()
+  portal()
+
+tina.onclick(draw)
+
+
+# for x in range(0,6):
+#     portal()
 
           </textarea>
           <script type="module">
@@ -309,30 +341,30 @@ for x in range(0,4):
 
           <div id="python-example-portal" class="toggleDisplayNone">
             <textarea id="portal">
-                    import turtle
-                    tina = turtle.Turtle()
-                    tina.shape("turtle")
+import turtle
+tina = turtle.Turtle()
+tina.shape("turtle")
 
-                    # initial portal
-                    # aka josh rules
+# initial portal
+# aka josh rules
 
-                    def portal():
-                      tina.forward(15)
-                      tina.left(60)
-                      tina.forward(15)
-                      tina.right(180)
-                      tina.forward(15)
-                      tina.left(60)
+def portal():
+  tina.forward(15)
+  tina.left(60)
+  tina.forward(15)
+  tina.right(180)
+  tina.forward(15)
+  tina.left(60)
 
-                    portal()
-                    portal()
-                    portal()
-                    portal()
-                    portal()
-                    portal()
+portal()
+portal()
+portal()
+portal()
+portal()
+portal()
 
-                    # for x in range(0,6):
-                    #     portal()
+# for x in range(0,6):
+#     portal()
           </textarea>
 
           <script type="module">
@@ -354,42 +386,42 @@ for x in range(0,4):
 
           <div id="python-example-snowflake" class="toggleDisplayNone">
             <textarea id="snowflake">
-                import turtle
-                tina = turtle.Turtle()
-                tina.shape("turtle")
+import turtle
+tina = turtle.Turtle()
+tina.shape("turtle")
 
-                # snowflake
+# snowflake
 
-                tina.forward(20)
-                tina.right(120)
+tina.forward(20)
+tina.right(120)
 
-                def needs_to_be_repeated_6():
-                  tina.left(60)
-                  tina.forward(20)
-                  tina.right(120)
-                  tina.forward(20)
+def needs_to_be_repeated_6():
+  tina.left(60)
+  tina.forward(20)
+  tina.right(120)
+  tina.forward(20)
 
-                for x in range(0,6):
-                    needs_to_be_repeated_6()
+for x in range(0,6):
+  needs_to_be_repeated_6()
 
-                tina.left(120)
-                tina.back(20)
+tina.left(120)
+tina.back(20)
 
-                def also_needs_to_be_repeated_6():
-                  tina.forward(40)
-                  tina.back(10)
-                  tina.right(60)
-                  tina.forward(10)
-                  tina.back(10)
-                  tina.left(120)
-                  tina.forward(10)
-                  tina.back(10)
-                  tina.right(60)
-                  tina.back(30)
-                  tina.right(60)
+def also_needs_to_be_repeated_6():
+  tina.forward(40)
+  tina.back(10)
+  tina.right(60)
+  tina.forward(10)
+  tina.back(10)
+  tina.left(120)
+  tina.forward(10)
+  tina.back(10)
+  tina.right(60)
+  tina.back(30)
+  tina.right(60)
 
-                for x in range(0,6):
-                    also_needs_to_be_repeated_6()
+for x in range(0,6):
+  also_needs_to_be_repeated_6()
           </textarea>
 
           </div>
@@ -410,23 +442,23 @@ for x in range(0,4):
 
           <div id="python-example-rope" class="toggleDisplayNone">
             <textarea id="rope">
-                import turtle
-                tina = turtle.Turtle()
-                tina.shape("turtle")
-                hose = 20
+import turtle
+tina = turtle.Turtle()
+tina.shape("turtle")
+hose = 20
 
-                # trapTheRugbyGuy aka GoodRiddanceJerkfaces
+# trapTheRugbyGuy aka GoodRiddanceJerkfaces
 
 
 
-                def trap(amount):
-                  # print(amount)
-                  tina.forward(hose)
-                  amount = amount-1
-                  tina.right(35)
+def trap(amount):
+  # print(amount)
+  tina.forward(hose)
+  amount = amount-1
+  tina.right(35)
 
-                for x in range(0,20):
-                  trap(hose)
+for x in range(0,20):
+  trap(hose)
 
           </textarea>
           </div>
@@ -448,30 +480,30 @@ for x in range(0,4):
 
           <div id="python-example-square" class="toggleDisplayNone">
             <textarea id="square">
-              import turtle
-              import random
+import turtle
+import random
 
-              tina = turtle.Turtle()
-              tina.shape("turtle")
+tina = turtle.Turtle()
+tina.shape("turtle")
 
-              # DrawSquare
+# DrawSquare
 
-              # print(random.randint(3, 9))
+# print(random.randint(3, 9))
 
-              # def lots_of_squares():
+# def lots_of_squares():
 
-              length = random.randint(1, 100)
+length = random.randint(1, 100)
 
-              def square(length):
-                tina.forward(length)
-                tina.right(90)
+def square(length):
+  tina.forward(length)
+  tina.right(90)
 
-              for x in range(0,4):
-                square(length)
+for x in range(0,4):
+  square(length)
 
 
-              # for x in range(1,100):
-              #   lots_of_squares()
+# for x in range(1,100):
+#   lots_of_squares()
 
           </textarea>
           </div>
@@ -512,24 +544,24 @@ for x in range(0,4):
 
           <div id="python-example0" class="toggleDisplayNone">
             <textarea id="clear-sidewalk">
-            import turtle
-            tina = turtle.Turtle()
-            tina.shape("turtle")
+import turtle
+tina = turtle.Turtle()
+tina.shape("turtle")
 
-            # clear sidewalk :)
+# clear sidewalk :)
 
-            tina.forward(40)
-            tina.left(90)
-            tina.forward(10)
+tina.forward(40)
+tina.left(90)
+tina.forward(10)
 
-            #PD
-            tina.forward(80)
-            tina.right(90)
-            tina.forward(60)
-            tina.right(90)
-            tina.forward(80)
-            tina.right(90)
-            tina.forward(60)
+#PD
+tina.forward(80)
+tina.right(90)
+tina.forward(60)
+tina.right(90)
+tina.forward(80)
+tina.right(90)
+tina.forward(60)
           </textarea>
 
           </div>
@@ -540,24 +572,24 @@ for x in range(0,4):
 
                 <!-- insert python here-->
                 <pre>
-                import turtle
-                tina = turtle.Turtle()
-                tina.shape("turtle")
+import turtle
+tina = turtle.Turtle()
+tina.shape("turtle")
 
-                # clear sidewalk :)
+# clear sidewalk :)
 
-                tina.forward(40)
-                tina.left(90)
-                tina.forward(10)
+tina.forward(40)
+tina.left(90)
+tina.forward(10)
 
-                #PD
-                tina.forward(80)
-                tina.right(90)
-                tina.forward(60)
-                tina.right(90)
-                tina.forward(80)
-                tina.right(90)
-                tina.forward(60)
+#PD
+tina.forward(80)
+tina.right(90)
+tina.forward(60)
+tina.right(90)
+tina.forward(80)
+tina.right(90)
+tina.forward(60)
               </pre>
               </div>
 
@@ -571,26 +603,26 @@ for x in range(0,4):
 
               <div id="python-example1" class="toggleDisplayNone">
                   <textarea id="open-sesame">
-                    import turtle
-                    tina = turtle.Turtle()
-                    tina.shape("turtle")
+import turtle
+tina = turtle.Turtle()
+tina.shape("turtle")
 
-                    # open sesame
+# open sesame
 
-                    #repeat 6 times
-                    def open_sesame():
-                      tina.forward(50) # 15 in comic
-                      tina.right(60)
+#repeat 6 times
+def open_sesame():
+  tina.forward(50) # 15 in comic
+  tina.right(60)
 
-                    open_sesame()
-                    # open_sesame()
-                    # open_sesame()
-                    # open_sesame()
-                    # open_sesame()
-                    # open_sesame()
+open_sesame()
+# open_sesame()
+# open_sesame()
+# open_sesame()
+# open_sesame()
+# open_sesame()
 
-                    # for x in range(0,6):
-                    #     open_sesame()
+# for x in range(0,6):
+#     open_sesame()
                   </textarea>
                 </div>
 
@@ -749,7 +781,10 @@ for x in range(0,4):
           <hr />
           <p>Here is the HTML:</p>
           <pre>
-                         &lt;input type="text" placeholder="Type something here, then click outside of the field." size="100"&gt;
+                         &lt;input
+                         type="text"
+                         placeholder="Type something here, then click outside of the field."
+                         size="100"/&gt;
                          &lt;p id="log"&gt;&lt;/p&gt;
                     </pre
           >

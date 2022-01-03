@@ -1,7 +1,3 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
-
 body {
   background:  linear-gradient(#afbed8,1%,#b3d1ff);
   color: black;
@@ -14,13 +10,15 @@ h1{
   margin:0;
 }
 
-#blue-ground {
- margin-left:0;
- margin-right:0;
+/* #blue-ground */
+#code-club {
+  margin-left:0;
+  margin-right:0;
  /*margin: -8px;*/
 }
 
-.blue-ground {
+/* .blue-ground */
+.code-club-nypl {
   background-color: #b3d1ff;
  }
 
